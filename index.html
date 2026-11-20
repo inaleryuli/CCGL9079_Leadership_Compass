@@ -83,7 +83,9 @@ h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.04; }
 .intro-notes > div:first-child { padding-left: 0; }
 .intro-notes > div + div { border-left: 1px solid var(--line); }
 .intro-notes p + p { margin-top: .4rem; color: var(--muted); }
-.footer { padding-block: 1.65rem; font-size: .7rem; letter-spacing: .03em; }
+.footer { flex-wrap: wrap; padding-block: 1.65rem; font-size: .7rem; letter-spacing: .03em; }
+.credits { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .85rem; }
+.credits ul { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: 0; padding: 0; list-style: none; }
 .quiz { max-width: 850px; min-height: 62vh; margin: clamp(32px, 6vw, 75px) auto 0; }
 .quiz-status { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
 #answered-count { font-size: .88rem; color: var(--muted); }
@@ -294,7 +296,20 @@ h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.04; }
         </div>
       </section>
     </main>
-    <footer class="footer"><span>The Leadership Compass</span><span>CCGL9079 · A student project</span></footer>
+    <footer class="footer">
+      <span>The Leadership Compass</span>
+      <span>CCGL9079 · A student project</span>
+      <div class="credits">
+        <span>Created by</span>
+        <ul aria-label="Team member UIDs">
+          <li>3036589662</li>
+          <li>3036407981</li>
+          <li>3036603389</li>
+          <li>3036570219</li>
+          <li>3036721765</li>
+        </ul>
+      </div>
+    </footer>
   </div>
   <script>
 const questions = [
